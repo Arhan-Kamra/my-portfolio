@@ -1,0 +1,60 @@
+@import "./typography";
+
+main.projects {
+  padding: 16px 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 16px;
+  grid-auto-rows: 200px;
+
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    background-image: url("../../assets/images/Form PHP.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    &--1::after {
+      content: "react.js";
+    }
+    &--2::after {
+      content: "redux";
+    }
+    &--3::after {
+      content: "javascript";
+    }
+    &--4::after {
+      content: "html5";
+    }
+    &--5::after {
+      content: "css3";
+    }
+    &--6::after {
+      content: "visual design";
+    }
+    &::after {
+      position: absolute;
+      color: hsla(240deg, 15%, 90%, 1);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      background-color: hsla(40deg, 60%, 65%, 0.9);
+      transform: rotateZ(45deg);
+      //   transform-origin: left;
+      width: 200px;
+      padding: 8px;
+      text-align: center;
+      top: 40px;
+      right: -50px;
+    }
+    &:nth-child(even) {
+      background-image: url("../../assets/images/Form PHP.png");
+    }
+  }
+}

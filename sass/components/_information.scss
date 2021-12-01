@@ -1,0 +1,47 @@
+@import "./typography";
+
+section.title {
+  color: hsla(240deg, 10%, 100%, 1);
+  padding: 16px 32px;
+
+  h1 {
+    color: hsla(240deg, 10%, 80%, 1);
+    margin-bottom: 16px;
+  }
+  h4 {
+    font-size: $h4;
+    color: hsla(240deg, 10%, 50%, 1);
+    margin-bottom: 16px;
+  }
+  ul.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    li {
+      margin-right: 8px;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      background-color: hsla(240deg, 10%, 100%, 1);
+      color: hsla(240deg, 30%, 10%, 1);
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: $base-size;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      font-variant-numeric: oldstyle-nums;
+
+      box-shadow: 0.1px 0.1px 0 0 hsla(240deg, 90%, 100%, 1),
+        -0.1px -0.1px 0 0 hsla(240deg, 90%, 100%, 1);
+      transition: all 200ms ease-out 0ms;
+
+      &:hover {
+        box-shadow: 3px 3px 0 0 hsla(240deg, 90%, 100%, 1),
+          -3px -3px 0 0 hsla(240deg, 90%, 100%, 1);
+      }
+      &:last-child {
+        margin-right: unset;
+      }
+    }
+  }
+}

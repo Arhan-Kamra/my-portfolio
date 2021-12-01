@@ -1,0 +1,34 @@
+@import "./typography";
+
+footer.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+
+  h2,
+  p {
+    color: hsla(0deg, 100%, 100%, 1);
+    margin-bottom: 16px;
+    text-align: center;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+    & > a {
+      font-weight: 900;
+      color: darkgray;
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    font-weight: 900;
+  }
+
+  p:last-child {
+    margin-bottom: unset;
+  }
+}

@@ -1,0 +1,120 @@
+@import "./typography";
+
+header.flex {
+  padding: 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  .logo {
+    width: 200px;
+    height: 50px;
+    background-image: url("../../assets/images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    padding: 16px;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      color: hsla(0deg, 100%, 100%, 1);
+    }
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+    .hamburger-menu__content--container {
+      padding: 16px;
+      position: absolute;
+      top: 40px;
+      right: 13px;
+      width: 232px;
+      height: min-content;
+      display: none;
+    }
+    .hamburger-menu__content {
+      background-color: hsla(240deg, 15%, 5%, 1);
+
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      ul {
+        width: 100%;
+      }
+      ul > a {
+        padding: 16px 32px;
+        max-width: 100%;
+        text-align: center;
+        display: block;
+
+        &:hover {
+          background-color: hsla(40deg, 80%, 70%, 1);
+          color: hsla(240deg, 30%, 10%, 1);
+        }
+
+        color: hsla(0deg, 100%, 100%, 1);
+        text-decoration: none;
+        text-transform: capitalize;
+
+        &.active {
+          font-weight: 900;
+          color: hsla(40deg, 80%, 70%, 1);
+          background-color: hsla(240deg, 30%, 10%, 1);
+          cursor: default;
+        }
+      }
+    }
+
+    &:hover {
+      .hamburger-menu__content--container {
+        display: flex;
+      }
+    }
+  }
+  nav {
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      a {
+        margin-right: 16px;
+        text-transform: capitalize;
+        color: hsla(0deg, 100%, 100%, 1);
+        text-decoration: none;
+        border-bottom: 2px solid;
+        border-bottom-color: hsla(0deg, 100%, 100%, 0);
+        width: 100px;
+        text-align: center;
+        transition: all 200ms ease 0ms;
+        s &:last-child {
+          margin-right: unset;
+        }
+
+        &:visited {
+        }
+        &:focus {
+        }
+        &:hover {
+          font-weight: 900;
+        }
+        &:active {
+        }
+      }
+      a.active {
+        font-weight: 900;
+      }
+    }
+  }
+}
