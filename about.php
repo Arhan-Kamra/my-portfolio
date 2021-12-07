@@ -1,4 +1,3 @@
-<div class="wrapper"><?php include('./components/header.php') ?>
-    <?php include('./components/projects.php') ?>
+<div class="wrapper"><?php include('./components/header.php') ?></div>
 
-    <footer class="flex"><?php include('./components/footer.php') ?>
+<footer class="flex"><?php include('./components/footer.php') ?>

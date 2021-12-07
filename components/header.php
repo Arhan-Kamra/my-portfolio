@@ -17,7 +17,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body class="has-sidebar">
     <header class="flex">
         <a href="./index.html">
             <div class="logo flex-item">
