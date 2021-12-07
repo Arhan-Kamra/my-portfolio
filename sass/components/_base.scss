@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  font: {
+    family: sans-serif;
+  }
+  background-color: hsla(240deg, 10%, 15%, 1);
+}
+
+::selection {
+  color: hsla(240deg, 10%, 90%, 1);
+  background-color: hsla(240deg, 10%, 15%, 1);
+}

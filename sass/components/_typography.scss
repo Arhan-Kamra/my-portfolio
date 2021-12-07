@@ -1,40 +1,41 @@
-// variables
-$base-size: 16px;
-$h4: $base-size * 1.414;
-$h3: $h4 * 1.414;
-$h2: $h3 * 1.414;
-$h1: $h2 * 1.414;
-
-$base-size-lheight: 24px;
-$h4-lheight: 32px;
-$h3-lheight: 32px;
-$h2-lheight: 48px;
-$h1-lheight: 64px;
-
-body {
-  font-size: $base-size;
-  line-height: $base-size-lheight;
-  h1 {
-    font-size: $h1;
-    line-height: $h1-lheight;
-  }
-  h2 {
-    font-size: $h2;
-    line-height: $h2-lheight;
-  }
-  h3 {
-    font-size: $h3;
-    line-height: $h3-lheight;
-  }
-  h4 {
-    font-size: $h4;
-    line-height: $h4-lheight;
+// anchor link colors
+a {
+  color: $anchor-color;
+  &:hover {
+    color: $anchor-color-hover;
   }
 }
 
-a {
-  color: hsla(240deg, 35%, 30%, 1);
-  &:hover {
-    color: hsla(240deg, 35%, 10%, 1);
-  }
+// default body styles
+body {
+  font-size: $base-size;
+  line-height: $base-size-lheight;
+}
+
+// default heading font-sizes
+h1 {
+  font-size: $h1;
+}
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4 {
+  font-size: $h4;
+}
+
+// default heading line heights
+h1 {
+  line-height: $h1-lheight;
+}
+h2 {
+  line-height: $h2-lheight;
+}
+h3 {
+  line-height: $h3-lheight;
+}
+h4 {
+  line-height: $h4-lheight;
 }

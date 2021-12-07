@@ -1,0 +1,21 @@
+@mixin align-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin font-colors {
+  h2 {
+    color: $base-color;
+    font-size: $h2;
+  }
+  a {
+    color: $anchor-color;
+    text-decoration: none;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+}

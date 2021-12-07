@@ -37,8 +37,10 @@ header.flex {
       top: 40px;
       right: 13px;
       width: 232px;
-      height: min-content;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 300ms ease-out, opacity 300ms ease-out,
+        height 300ms ease-out;
     }
     .hamburger-menu__content {
       background-color: hsla(240deg, 15%, 5%, 1);
@@ -78,6 +80,8 @@ header.flex {
     &:hover {
       .hamburger-menu__content--container {
         display: flex;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

@@ -1,0 +1,18 @@
+// font sizes
+$base-size: 16px;
+$h4: $base-size * 1.414;
+$h3: $h4 * 1.414;
+$h2: $h3 * 1.414;
+$h1: $h2 * 1.414;
+
+// line heights
+$base-size-lheight: 24px;
+$h4-lheight: 32px;
+$h3-lheight: 32px;
+$h2-lheight: 48px;
+$h1-lheight: 64px;
+
+// colors
+$base-color: hsla(240deg, 15%, 95%);
+$anchor-color: hsla(240deg, 35%, 30%, 1);
+$anchor-color-hover: hsla(240deg, 35%, 10%, 1);
