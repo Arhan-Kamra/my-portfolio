@@ -1,4 +1,5 @@
 section.contact {
+  padding: 20px;
   display: grid;
   grid-template-columns: 200px 200px 1fr 200px;
   grid-template-rows: repeat(2, 200px);
@@ -20,8 +21,9 @@ section.contact {
   }
 
   div.form {
-    grid-column: 1 / 3;
+    grid-column: 2 / 4;
     color: $base-color;
+    @include align-middle;
 
     h3 {
       margin-bottom: 16px;
@@ -47,6 +49,9 @@ section.contact {
       border: 1px solid $base-color;
       background-color: $anchor-color-hover;
       margin-bottom: 16px;
+      caret-color: $base-color;
+      color: $base-color;
+      font-size: $base-size;
 
       &:focus {
         outline: $anchor-color;

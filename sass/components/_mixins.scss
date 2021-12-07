@@ -7,15 +7,19 @@
 }
 
 @mixin font-colors {
-  h2 {
+  h4 {
     color: $base-color;
-    font-size: $h2;
+    font-size: $h4;
   }
-  a {
-    color: $anchor-color;
-    text-decoration: none;
-    &:hover {
-      color: $anchor-color-hover;
+  h3 {
+    a {
+      color: $anchor-color;
+      text-decoration: none;
+      background-color: $base-color;
+      &:hover {
+        color: $anchor-color-hover;
+        text-decoration: underline;
+      }
     }
   }
 }

@@ -1,16 +1,16 @@
 <section class="contact">
     <div class="email">
-        <h2>An Email is an excellent choice</h2>
-        <h2><a href="mailto:arhankamra@yahoo.com">
+        <h4>An Email is an excellent choice</h4>
+        <h3><a href="mailto:arhankamra@yahoo.com">
                 arhankamra@yahoo.com
-            </a></h2>
+            </a></h3>
     </div>
 
     <div class="mobile">
-        <h2>A WhatsApp message? Even Modern</h2>
-        <h2><a href="">
+        <h4>A WhatsApp message? Even Modern</h4>
+        <h3><a href="">
                 9350228754
-            </a></h2>
+            </a></h3>
     </div>
 
     <div class="form">
